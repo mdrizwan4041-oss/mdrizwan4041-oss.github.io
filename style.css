@@ -1,0 +1,79 @@
+:root {
+  --bg:#0f172a;
+  --text:#f8fafc;
+  --card:#1e293b;
+  --accent:#38bdf8;
+}
+
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  transition:0.3s;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+}
+
+.hero {
+  text-align:center;
+  padding:80px 20px;
+}
+
+.btn {
+  padding:12px 25px;
+  margin:10px;
+  background:var(--accent);
+  color:black;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.btn.outline {
+  background:transparent;
+  border:2px solid var(--accent);
+  color:var(--accent);
+}
+
+section {
+  max-width:1000px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:var(--card);
+  padding:25px;
+  border-radius:10px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  border:1px solid var(--accent);
+}
+
+.social a {
+  margin-right:15px;
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
